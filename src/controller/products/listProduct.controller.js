@@ -8,7 +8,7 @@ export async function listProductController(req, res) {
     return res.status(200).json(product);
   } catch (error) {
     return res.status(400).json({
-      message: error,
+      message: error.message,
     });
   }
 }

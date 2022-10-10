@@ -6,7 +6,7 @@ export async function listProductsController(req, res) {
     return res.status(200).json(products);
   } catch (error) {
     return res.status(400).json({
-      message: error,
+      message: error.message,
     });
   }
 }
